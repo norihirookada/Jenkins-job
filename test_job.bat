@@ -8,3 +8,4 @@ rem winpty
 docker-compose up -d
 docker-compose ps
 docker exec docker_mysql_db_1 bash -c "cd /var/dummy && ./success.sh"
+docker exec docker_mysql_db_1 bash -c "cd /var/dummy && ./failure.sh"
