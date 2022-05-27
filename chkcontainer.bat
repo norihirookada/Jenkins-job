@@ -8,6 +8,7 @@ rem winpty
 
 docker-compose up -d
 docker-compose ps
+docker ps -a
 
 docker exec docker_mysql_db_1 bash -c "cd /var/dummy && ./failure.sh"
 IF %ERRORLEVEL% == 0 (
