@@ -38,7 +38,7 @@ docker exec docker_mysql_db_1 bash -c "cd /var/dummy && ./success.sh"
 IF %ERRORLEVEL% == 0 (
     docker stop docker_mysql_db_1
     docker rm docker_mysql_db_1
-    echo '"docker rmi ..." for yourself'
+    docker rmi mysql:8.0
 ) ELSE (
     echo success.sh resulted in faiure
 )
