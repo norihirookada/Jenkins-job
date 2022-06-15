@@ -1,6 +1,7 @@
 @echo off
-echo "This is Jenkins.  Can I help you?"
 echo %date% %time%
+echo "This is Jenkins.  Can I help you?"
+echo "related to https://mamezou.backlog.jp/view/DEN_FAPLATFORM_ENG-230"
 
 cd docker_mysql
 
